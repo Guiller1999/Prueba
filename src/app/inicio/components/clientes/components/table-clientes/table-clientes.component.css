@@ -1,0 +1,80 @@
+.title {
+    margin-top: 10px;
+    text-align: center;
+}
+  
+.mat-table {
+    width: 100%;
+}
+    
+.mat-form-field {
+    font-size: 14px;
+    width: 100%;
+}
+    
+td, th {
+    width: 25%;
+}
+  
+.container-button {
+    max-width: 80%;
+    margin: 0 auto;
+}
+  
+.filter {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-filter {
+    max-width: 70%;
+}
+  
+.filter button {
+    margin-left: 30px;
+}
+  
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+  
+.mat-table {
+    overflow: auto;
+}
+  
+.mobile-label {
+    display: none;
+}
+  
+@media screen and (max-width: 1000px) {
+    .container, .container-button, .filter {
+      max-width: 90%;
+    }
+}
+  
+@media(max-width: 600px) {  
+    .mat-cell {
+      width: 100%;
+    }
+  
+    .mobile-label {
+      width: 40%;
+      display: inline-block;
+      font-weight: bold;
+    }
+  
+    .mat-header-row {
+      display: none;
+    }
+  
+    .mat-row { 
+      flex-direction: column;
+      align-items: start;
+      padding: 8px 24px;
+    }
+}

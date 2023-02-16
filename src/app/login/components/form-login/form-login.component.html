@@ -1,0 +1,34 @@
+<div class="container">
+    <mat-card class="container-card">
+        <div style="margin-bottom: 15px; text-align: center; width: 100%">
+            <mat-card-title>LOGIN</mat-card-title>
+        </div>
+        <div class="container-image">
+            <img src="../../../../assets/user.png" alt="Photo of a Shiba Inu">
+        </div>
+        <mat-card-content>
+            <form [formGroup]="loginForm">
+                <mat-form-field appearance="outline">
+                    <mat-label>Usuario</mat-label>
+                    <input formControlName="usuario" matInput placeholder="Ingrese usuario">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input 
+                    type="password" 
+                    formControlName="password" 
+                    matInput 
+                    placeholder="Ingrese nombre del producto">
+                </mat-form-field>
+                <div class="container-button">
+                    <button 
+                    mat-raised-button 
+                    color="primary"
+                    (click)="iniciarSesion()">
+                        Iniciar sesión
+                    </button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

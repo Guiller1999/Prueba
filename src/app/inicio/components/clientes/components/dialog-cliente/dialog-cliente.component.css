@@ -1,0 +1,22 @@
+mat-form-field {
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .container-actions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-cancel, .button-save {
+        width: 100%;
+    }
+
+    .button-cancel {
+        margin-right: 0;
+        margin-left: 0px !important;
+        margin-top: 10px;
+    }
+}
